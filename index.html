@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Sorting Visualizer</title>
+  <link rel="stylesheet" href="sorting.css">
+</head>
+<body onload="creatediv()">
+  <div class="header">
+    <div class="heading">
+      <h1 id="heading">Sorting Visualizer</h1>
+    </div>
+    <hr style="color:white;">
+    <div class="buttons">
+      <span class="randomize">
+      <button type="button" class="button" id="random">Generate New Array</button>
+      </span>
+      <span id="control">
+        <div class="slider">
+          <span id="sizetext" class="slidertext">Array Size: </span>
+          <span class="input"><input type="range" min="10" max="100" value="50" id="arraysize"></span>
+        </div>
+        <div class="slider">
+          <span id="speedtext" class="slidertext">Speed: </span>
+          <span class="input"><input type="range" min="1" max="5" value="3" id="speed"></span>
+        </div>
+      </span>
+      <span class="methods">
+        <button type="button" class="button" id="bubble">Bubble Sort</button>
+        <button type="button" class="button" id="selection">Selection Sort</button>
+        <button type="button" class="button" id="insertion">Insertion Sort</button>
+        <button type="button" class="button" id="merge">Merge Sort</button>
+        <button type="button" class="button" id="quick">Quick Sort</button>
+        <button type="button" class="button" id="heap">Heap Sort</button>
+      </span>
+    </div>
+  </div>
+  <div id="bars" class="barsdiv">
+
+  </div>
+  <script src="js_files/merge.js"></script>
+  <script src="js_files/bubble.js"></script>
+  <script src="js_files/selection.js"></script>
+  <script src="js_files/insertion.js"></script>
+  <script src="js_files/quick.js"></script>
+  <script src="js_files/heap.js"></script>
+  <script src="js_files/sorting.js"></script>
+</body>
+</html>
